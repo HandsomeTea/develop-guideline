@@ -10,6 +10,7 @@ module.exports = {
         ],
         '@typescript-eslint/no-unused-vars': [2, { 'vars': 'all', 'args': 'after-used' }],
         '@typescript-eslint/no-redeclare': 2, //禁止重复声明变量
+        '@typescript-eslint/no-extra-parens': 2, //禁止非必要的括号
         'indent': [2, 4, { SwitchCase: 1 }], //缩进风格
         'linebreak-style': [0, 'error', 'windows', 'unix'], //换行风格
         'quotes': [2, 'single'], // 引号
@@ -18,7 +19,6 @@ module.exports = {
         'no-multiple-empty-lines': [2, { 'max': 2 }], // 最大空行2
         'no-console': 2, //不能使用console
         'no-constant-condition': 2, // 禁止在条件中使用常量表达式 if(true) if(1)
-        '@typescript-eslint/no-extra-parens': 2, //禁止非必要的括号
         'no-extra-semi': 2, //禁止多余的冒号
         'no-func-assign': 2, //禁止重复的函数声明
         'no-mixed-spaces-and-tabs': [2, false], //禁止混用tab和空格
@@ -57,6 +57,7 @@ module.exports = {
         'use-isnan': 2, //禁止比较时使用NaN，只能用isNaN()
         'valid-typeof': 2, //必须使用合法的typeof的值
         'no-useless-escape': 2, //可以进行必要的转义，考虑正则表达式
-        'require-atomic-updates': 'off'
+        'require-atomic-updates': 'off',
+        'vue/html-indent': [2, 4, { SwitchCase: 1 }] //html缩进风格
     }
 }
